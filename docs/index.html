@@ -2,11 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Static Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BILEZIK BAGH</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>Welcome to my first website.</p>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">BILEZIK BAGH</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bracelets.html">Bracelets</a></li>
+        <li><a href="rings.html">Rings</a></li>
+        <li><a href="charms.html">Phone Charms</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+    <input type="text" id="searchBar" placeholder="Search jewelry..." />
+  </header>
+
+  <!-- Banner -->
+  <section class="banner">
+    <h1>Welcome to BILEZIK BAGH</h1>
+    <p>Explore luxurious handmade bracelets, rings, and phone charms.</p>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="featured">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product">Bracelet 1</div>
+      <div class="product">Ring 1</div>
+      <div class="product">Charm 1</div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
