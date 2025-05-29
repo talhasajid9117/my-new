@@ -2,42 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BILEZIK BAGH</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navbar -->
-  <header class="navbar">
+  <header>
     <div class="logo">BILEZIK BAGH</div>
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bracelets.html">Bracelets</a></li>
-        <li><a href="rings.html">Rings</a></li>
-        <li><a href="charms.html">Phone Charms</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cart.html">Cart</a></li>
+      <ul class="nav-links">
+        <li><a href="#" data-category="all">All</a></li>
+        <li><a href="#" data-category="bracelets">Bracelets</a></li>
+        <li><a href="#" data-category="rings">Rings</a></li>
+        <li><a href="#" data-category="phone-charms">Phone Charms</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cart">Cart</a></li>
+        <li><a href="#checkout">Checkout</a></li>
       </ul>
     </nav>
-    <input type="text" id="searchBar" placeholder="Search jewelry..." />
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search products..." />
+    </div>
   </header>
 
-  <!-- Banner -->
-  <section class="banner">
-    <h1>Welcome to BILEZIK BAGH</h1>
-    <p>Explore luxurious handmade bracelets, rings, and phone charms.</p>
+  <main>
+    <section id="product-list" class="products">
+      <!-- Products will appear here -->
+    </section>
+  </main>
+
+  <!-- About, Contact, Cart, Checkout sections for now are placeholders -->
+  <section id="about" class="info-section">
+    <h2>About Us</h2>
+    <p>Welcome to BILEZIK BAGH — your luxurious bead and charm boutique!</p>
   </section>
 
-  <!-- Featured Products -->
-  <section class="featured">
-    <h2>Featured Products</h2>
-    <div class="product-grid">
-      <div class="product">Bracelet 1</div>
-      <div class="product">Ring 1</div>
-      <div class="product">Charm 1</div>
-    </div>
+  <section id="contact" class="info-section">
+    <h2>Contact Us</h2>
+    <p>Email: contact@bilezikbagh.com</p>
+  </section>
+
+  <section id="cart" class="info-section">
+    <h2>Your Cart</h2>
+    <p>Cart is empty for now.</p>
+  </section>
+
+  <section id="checkout" class="info-section">
+    <h2>Checkout</h2>
+    <p>Checkout page coming soon!</p>
   </section>
 
   <script src="script.js"></script>
