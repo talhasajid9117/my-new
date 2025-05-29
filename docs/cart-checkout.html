@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout | BILEZIK BAGH</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">BILEZIK BAGH</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bracelets.html">Bracelets</a></li>
+        <li><a href="rings.html">Rings</a></li>
+        <li><a href="charms.html">Phone Charms</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html" class="active">Checkout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="checkout-container">
+    <h2>Checkout</h2>
+    <p>Enter your details below to place an order.</p>
+
+    <form action="https://formspree.io/f/mkgrdddp" method="POST" class="checkout-form">
+      <input type="text" name="name" placeholder="Full Name" required />
+      <input type="email" name="email" placeholder="Email Address" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <textarea name="orderDetails" rows="5" placeholder="List your selected items or special notes..." required></textarea>
+      <button type="submit">Place Order</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BILEZIK BAGH. All rights reserved.</p>
+  </footer>
+</body>
+</html>
